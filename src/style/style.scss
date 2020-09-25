@@ -28,7 +28,7 @@
 $b-color: #7AA0FF;
 $bg-color: #CCDAFF;
 $main-color: #000;
-$main-content: 1200px;
+$main-content: 62vw;
 $w-color:#fff;
 
 html, body {
@@ -44,14 +44,14 @@ body {
 
 header{
   background-color: $b-color;
-  height: 90px;
+  height: 8vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0em 2em 0em 2em;
 
   .logo__img {
-    width: 4.5em;
+    width: 5vw;
   }
 
   .menu {
@@ -59,8 +59,8 @@ header{
     .menu__link {
       @extend %com-bold;
       text-decoration: none;
-      font-size: 1.3em;
-      padding: 00px 15px;
+      font-size: 2vh;
+      padding: 0px 1vw;
       color:$w-color;
     }
   }
@@ -73,24 +73,25 @@ header{
 
   .title {
     @extend %com-bold;
-    font-size: 3em;
+    font-size: 4vh;
   }
 
   .news {
-    margin-bottom: 2em;
+    margin-bottom: 4.5vh;
     border: 1px solid black;
     border-radius: 20px;
-    padding: 1.5em;
+    padding: 2vmin;
     background-color: $bg-color;
+    box-shadow: 0.5vw 1.5vh 2vmin 0.5vmin black;
 
     .news__title {
       @extend %com-sbold;
-      font-size: 1.37em;
+      font-size: 2.5vh;
     }
 
     .news__content {
       @extend %com-reg;
-      font-size: 1em;
+      font-size: 1.5vh;
     }
   }
 }
@@ -107,7 +108,9 @@ footer {
   .feedback {
     @extend %com-bold;
     color: $w-color;
-    font-size: 1.3em;
+    font-size: 1.8vh;
     text-align: center;
   }
 }
+
+@import 'style-phone';

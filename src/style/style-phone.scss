@@ -1,0 +1,22 @@
+@media screen and (max-width: 1025px) {
+    header {
+        .logo {
+            .logo__img {
+                width: 9vw;
+            }
+        }
+    }
+    .content {
+        width:90vw;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    header {
+        .logo {
+            .logo__img {
+                width: 12vw;
+            }
+        }
+    }
+}
