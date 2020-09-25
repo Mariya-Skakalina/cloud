@@ -31,9 +31,15 @@ $main-color: #000;
 $main-content: 1200px;
 $w-color:#fff;
 
+html, body {
+  min-height: 100vh;
+}
+
 body {
   margin: 0px;
   padding: 0px;
+  display: flex;
+  flex-direction: column;
 }
 
 header{
@@ -86,5 +92,22 @@ header{
       @extend %com-reg;
       font-size: 1em;
     }
+  }
+}
+
+.bro {
+  flex-grow: 1;
+}
+
+footer {
+  min-height: 30px;
+  flex-grow: 0;
+  background-color: $b-color;
+
+  .feedback {
+    @extend %com-bold;
+    color: $w-color;
+    font-size: 1.3em;
+    text-align: center;
   }
 }
