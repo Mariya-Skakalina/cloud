@@ -1,0 +1,90 @@
+@import 'fonts';
+
+%com-bold {
+  font-family: Comfortaa, Arial, sans-serif;
+  font-weight: 700;
+}
+
+%com-sbold {
+  font-family: Comfortaa, Arial, sans-serif;
+  font-weight: 600;
+}
+
+%com-medium {
+  font-family: Comfortaa, Arial, sans-serif;
+  font-weight: 500;
+}
+
+%com-reg {
+  font-family: Comfortaa, Arial, sans-serif;
+  font-weight: 700;
+}
+
+%com-light {
+  font-family: Comfortaa, Arial, sans-serif;
+  font-weight: 300;
+}
+
+$b-color: #7AA0FF;
+$bg-color: #CCDAFF;
+$main-color: #000;
+$main-content: 1200px;
+$w-color:#fff;
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+header{
+  background-color: $b-color;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0em 2em 0em 2em;
+
+  .logo__img {
+    width: 4.5em;
+  }
+
+  .menu {
+
+    .menu__link {
+      @extend %com-bold;
+      text-decoration: none;
+      font-size: 1.3em;
+      padding: 00px 15px;
+      color:$w-color;
+    }
+  }
+  
+}
+
+.content {
+  width: $main-content;
+  margin: auto;
+
+  .title {
+    @extend %com-bold;
+    font-size: 3em;
+  }
+
+  .news {
+    margin-bottom: 2em;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 1.5em;
+    background-color: $bg-color;
+
+    .news__title {
+      @extend %com-sbold;
+      font-size: 1.37em;
+    }
+
+    .news__content {
+      @extend %com-reg;
+      font-size: 1em;
+    }
+  }
+}
